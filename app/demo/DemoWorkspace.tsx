@@ -60,7 +60,7 @@ const sectionCopy: Record<
   }
 > = {
   mission: {
-    eyebrow: "FUNDRAISING & BANDI LIVE",
+    eyebrow: "FUNDING INTELLIGENCE LIVE",
     title: "Funding Control",
     description: "Opportunità, next best actions, rischi e alert per fundraising e bandi.",
     insight: "Due opportunità possono avanzare. Un rischio e una scadenza richiedono presidio.",

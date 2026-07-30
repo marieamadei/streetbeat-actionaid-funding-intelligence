@@ -106,7 +106,7 @@ export default function Home() {
             <em> Meno dispersione.</em>
           </h1>
           <p>
-            Fundraising & Bandi Intelligence connette CRM, opportunità, evidenze,
+            Funding Intelligence connette CRM, opportunità, evidenze,
             contenuti e scadenze per aiutare ActionAid a scegliere meglio dove
             investire e preparare più rapidamente la prossima azione.
           </p>
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-stage" aria-label="Anteprima di ActionAid Fundraising e Bandi Intelligence">
+        <div className="hero-stage" aria-label="Anteprima di ActionAid Funding Intelligence">
           <div className="photo-card">
             <img
               src={asset("/actionaid-citizenship.jpg")}
@@ -377,7 +377,7 @@ export default function Home() {
         <div className="final-copy">
           <span>STREETBEAT × ACTIONAID</span>
           <h2>Partire dal core.<br />Misurare il valore.<br /><em>Estendere ciò che funziona.</em></h2>
-          <p>Entra nella demo e prova una giornata operativa di ActionAid Fundraising & Bandi Intelligence.</p>
+          <p>Entra nella demo e prova una giornata operativa di ActionAid Funding Intelligence.</p>
           <Link className="button button-primary" href="/demo">Esplora la demo <span>→</span></Link>
         </div>
       </section>
