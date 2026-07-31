@@ -100,27 +100,38 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <div className="eyebrow"><span /> STREETBEAT × ACTIONAID · FOLLOW-UP CONCEPT</div>
+          <div className="eyebrow"><span /> STREETBEAT × ACTIONAID</div>
           <h1>
-            Più opportunità. Relazioni più forti.
-            <em> Meno dispersione.</em>
+            Dall’AI sperimentata
+            <em> all’AI operativa.</em>
           </h1>
           <p>
-            Funding Intelligence connette CRM, opportunità, evidenze,
-            contenuti e scadenze per aiutare ActionAid a scegliere meglio dove
-            investire e preparare più rapidamente la prossima azione.
+            Il recap del nostro primo confronto e una direzione concreta per
+            collegare fundraising, bandi, progetti ed evidenze.
           </p>
-          <div className="hero-actions">
-            <a className="button button-primary" href="#valore">
-              Scopri Funding Intelligence <span aria-hidden="true">→</span>
-            </a>
-            <a className="button button-ghost" href="#visione">Scopri la visione</a>
+
+          <div className="hero-passage" aria-label="Il passaggio che immaginiamo">
+            <span>IL PASSAGGIO CHE IMMAGINIAMO</span>
+            <div className="hero-passage-grid">
+              <article>
+                <small>OGGI</small>
+                <h3>Sperimentare</h3>
+                <p>Licenze, formazione, GPT creati dai team</p>
+              </article>
+              <i aria-hidden="true">→</i>
+              <article className="passage-tomorrow">
+                <small>DOMANI</small>
+                <h3>Operare</h3>
+                <p>Un ambiente AI condiviso, proattivo e governato</p>
+              </article>
+            </div>
           </div>
-          <div className="hero-proof">
-            <span><i className="dot green" /> OPPORTUNITÀ</span>
-            <span><i className="dot blue" /> NEXT BEST ACTIONS</span>
-            <span><i className="dot red" /> RISCHI</span>
-            <span><i className="dot amber" /> ALERT</span>
+
+          <div className="hero-actions">
+            <a className="button button-primary" href="#visione">
+              La direzione che proponiamo <span aria-hidden="true">→</span>
+            </a>
+            <a className="button button-ghost" href="#prossimo-passo">Settembre, Milano</a>
           </div>
         </div>
 
