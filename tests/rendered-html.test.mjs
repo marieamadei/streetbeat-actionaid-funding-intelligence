@@ -35,6 +35,9 @@ test("renders the ActionAid Funding Intelligence presentation", async () => {
   assert.match(html, /Licenze, formazione, GPT creati dai team/);
   assert.match(html, /Un ambiente AI condiviso, proattivo e governato/);
   assert.match(html, /Abbiamo una Ferrari importantissima/);
+  assert.match(html, /La base è già solida/);
+  assert.match(html, /Ora serve una direzione condivisa/);
+  assert.match(html, /ActionAid ha già superato la fase della curiosità/);
   assert.match(html, /Controllo e affidabilità/);
   assert.match(html, /OPPORTUNITÀ/);
   assert.match(html, /Jarvis/);

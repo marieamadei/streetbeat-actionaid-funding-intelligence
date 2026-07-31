@@ -198,22 +198,21 @@ export default function Home() {
       </section>
 
       <section className="section scope-section" id="visione">
-        <div className="section-kicker">DA DOVE PARTIRE</div>
+        <div className="section-kicker">IL PUNTO DI PARTENZA</div>
         <div className="split-heading">
-          <h2>Un primo perimetro concreto.<br /><em>Fundraising e bandi.</em></h2>
+          <h2>La base è già solida.<br /><em>Ora serve una direzione condivisa.</em></h2>
           <p>
-            ActionAid ha già abilitato circa 170 persone, investito in formazione e
-            favorito la creazione di GPT da parte dei team. Il confronto ha indicato
-            un ambito in cui bisogno, dati e valore misurabile sono già concreti:
-            raccolta fondi e bandi.
+            ActionAid ha già superato la fase della curiosità. L’investimento, la
+            formazione e le iniziative interne — circa 170 persone abilitate e GPT
+            creati dai team — mostrano una base reale da cui partire.
           </p>
         </div>
 
         <div className="scope-framework">
           <div className="scope-intro">
-            <span>LA PROPOSTA</span>
-            <h3>Un ambiente di lavoro ActionAid,<br /><em>costruito sui sistemi e sui processi già in uso.</em></h3>
-            <p>Interfaccia, linguaggio, permessi e casi d’uso vengono definiti con i team e diventano quelli dell’organizzazione.</p>
+            <span>IL PRIMO PERIMETRO</span>
+            <h3>Fundraising e bandi.<br /><em>Un ambito concreto e misurabile.</em></h3>
+            <p>Qui bisogno, dati e capacità di misurare il valore sono già visibili. La proposta è un ambiente di lavoro ActionAid, costruito sui sistemi e sui processi già in uso.</p>
           </div>
           <div className="scope-cards">
             <article><span>01</span><h4>Osserva</h4><p>Incrocia opportunità, segnali dal CRM, storico, evidenze e scadenze.</p></article>
