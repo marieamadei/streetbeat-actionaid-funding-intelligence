@@ -90,7 +90,7 @@ export default function Home() {
           <a href="#visione">Visione</a>
           <a href="#valore">Valore AI</a>
           <a href="#prodotto">Come funziona</a>
-          <a href="#governance">Adozione</a>
+          <a href="#streetbeat">Perché Streetbeat</a>
         </div>
         <Link className="button button-nav" href="/demo">
           Entra nella demo <span aria-hidden="true">↗</span>
@@ -195,25 +195,57 @@ export default function Home() {
         ))}
       </section>
 
+      <section className="meeting-quote" aria-labelledby="meeting-quote-title">
+        <div className="meeting-quote-inner">
+          <div className="quote-context">
+            <span>DAL PRIMO CONFRONTO</span>
+            <p>29 luglio 2026 · Il punto non è dare più AI alle persone. È darle una direzione operativa condivisa.</p>
+          </div>
+          <blockquote id="meeting-quote-title">
+            “Abbiamo una Ferrari importantissima,<br />
+            <em>ma in che direzione mandarla è un tema.”</em>
+          </blockquote>
+          <div className="quote-attribution">
+            <span>ML</span>
+            <p>
+              <strong>Mariapaola Leporale</strong>
+              <small>Head of Donors Analytics, Insights and Evolution · ActionAid</small>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="section vision-section" id="visione">
         <div className="section-kicker">LA VISIONE</div>
         <div className="split-heading">
-          <h2>170 persone hanno accesso a ChatGPT.<br /><em>Il passo successivo non è imporre l’AI.</em></h2>
+          <h2>Dall’AI sperimentata all’AI operativa.<br /><em>Una direzione condivisa, senza imporre nuovi comportamenti.</em></h2>
           <p>
-            È cambiare l’ambiente di lavoro affinché l’AI faciliti ciò che le persone
-            devono già fare. Streetbeat parte dal core condiviso nell’incontro —
-            fundraising e bandi — e porta opportunità, conoscenza e prossime azioni
-            dentro workflow costruiti insieme ai team.
+            ActionAid ha già abilitato circa 170 persone a ChatGPT, investito in
+            formazione e aperto la sperimentazione. Ora Streetbeat parte dal core
+            condiviso nell’incontro — fundraising e bandi — per trasformare questo
+            potenziale in opportunità, conoscenza e prossime azioni nei workflow reali.
           </p>
+        </div>
+
+        <div className="workspace-principle">
+          <div>
+            <span>IL CAMBIO DI PARADIGMA</span>
+            <h3>Non un altro abbonamento.<br /><em>Un ambiente di lavoro ActionAid.</em></h3>
+          </div>
+          <p>
+            La base tecnologica è comune, ma interfaccia, linguaggio, permessi e casi
+            d’uso diventano quelli dell’organizzazione che la usa.
+          </p>
+          <strong>Dati ActionAid <i>+</i> Regole ActionAid <i>+</i> Voce ActionAid <b>=</b> un ambiente che lavora con voi</strong>
         </div>
 
         <div className="maturity-bridge">
           <article className="maturity-now">
-            <span className="bridge-label">IL PUNTO DI PARTENZA</span>
-            <h3>Accesso all’AI per tutte le persone.</h3>
+            <span className="bridge-label">OGGI · SPERIMENTARE</span>
+            <h3>Accesso, formazione e iniziativa dei team.</h3>
             <ul>
               <li><i>✓</i> 170 persone abilitate a ChatGPT</li>
-              <li><i>✓</i> Apertura alla sperimentazione</li>
+              <li><i>✓</i> GPT creati direttamente dai team</li>
               <li><i>✓</i> Forte attenzione all’adozione responsabile</li>
             </ul>
             <div className="source-note">Informazioni condivise nell’incontro</div>
@@ -224,8 +256,8 @@ export default function Home() {
             <p>Ridisegna il contesto di lavoro, non impone un nuovo comportamento.</p>
           </div>
           <article className="maturity-next">
-            <span className="bridge-label">IL CAMBIO DI PARADIGMA</span>
-            <h3>Un ambiente di lavoro che facilita fundraising e bandi.</h3>
+            <span className="bridge-label">DOMANI · OPERARE</span>
+            <h3>Un ambiente condiviso, proattivo e governato.</h3>
             <ul>
               <li><i>→</i> Fa emergere opportunità e priorità</li>
               <li><i>→</i> Recupera conoscenza e prepara il lavoro</li>
@@ -327,6 +359,45 @@ export default function Home() {
               <b>↗</b>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="streetbeat-section" id="streetbeat">
+        <div className="section">
+          <div className="section-kicker light">PERCHÉ STREETBEAT</div>
+          <div className="split-heading streetbeat-heading">
+            <h2>AI per contesti in cui controllo e affidabilità<br /><em>non sono opzionali.</em></h2>
+            <p>
+              Fondata negli Stati Uniti da Damian Scavo, Streetbeat ha sviluppato la
+              propria architettura nei servizi finanziari. Da qui arrivano il rigore
+              su dati, permessi, audit e controllo umano che oggi portiamo nel nonprofit.
+            </p>
+          </div>
+
+          <div className="streetbeat-proof-grid">
+            <article>
+              <span>01</span>
+              <h3>Fondata negli USA</h3>
+              <p>Attiva dal 2022, con hub di ingegneria in Europa e un team distribuito.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Costruita nei servizi finanziari</h3>
+              <p>Un’architettura nata per dati sensibili, processi regolamentati e responsabilità chiare.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Guardrail fin dall’architettura</h3>
+              <p>Fonti, permessi, audit e controllo umano sono parte del sistema, non verifiche aggiunte alla fine.</p>
+            </article>
+          </div>
+
+          <div className="streetbeat-facts" aria-label="Streetbeat in breve">
+            <div><strong>Palo Alto</strong><span>fondazione</span></div>
+            <div><strong>Europa</strong><span>engineering hub</span></div>
+            <div><strong>30+</strong><span>brevetti</span></div>
+            <div><strong>$25M</strong><span>raccolti da investitori leader</span></div>
+          </div>
         </div>
       </section>
 
