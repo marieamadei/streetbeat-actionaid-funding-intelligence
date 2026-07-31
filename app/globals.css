@@ -880,6 +880,105 @@ select {
   line-height: 1.7;
 }
 
+.scope-framework {
+  margin-top: 76px;
+  overflow: hidden;
+  color: var(--white);
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 86% 10%, rgba(0, 253, 134, .12), transparent 28%),
+    var(--ink);
+  box-shadow: 0 30px 80px rgba(16, 17, 18, .12);
+}
+
+.scope-intro {
+  display: grid;
+  grid-template-columns: 1.18fr .62fr;
+  gap: clamp(40px, 7vw, 110px);
+  align-items: end;
+  padding: clamp(38px, 5vw, 72px);
+}
+
+.scope-intro > span {
+  grid-column: 1 / -1;
+  color: var(--streetbeat);
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .14em;
+}
+
+.scope-intro h3 {
+  margin: -4px 0 0;
+  font-size: clamp(34px, 4vw, 62px);
+  letter-spacing: -.048em;
+  line-height: 1.03;
+}
+
+.scope-intro h3 em {
+  color: rgba(255, 255, 255, .6);
+  font-style: normal;
+}
+
+.scope-intro p {
+  margin: 0;
+  color: rgba(255, 255, 255, .5);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.scope-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, .13);
+}
+
+.scope-cards article {
+  min-height: 230px;
+  padding: 30px;
+  border-right: 1px solid rgba(255, 255, 255, .13);
+}
+
+.scope-cards article:last-child {
+  border-right: 0;
+}
+
+.scope-cards span {
+  color: var(--streetbeat);
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.scope-cards h4 {
+  margin: 65px 0 12px;
+  font-size: 27px;
+}
+
+.scope-cards p {
+  max-width: 330px;
+  margin: 0;
+  color: rgba(255, 255, 255, .48);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.scope-formula {
+  display: block;
+  padding: 31px clamp(30px, 5vw, 72px);
+  color: rgba(255, 255, 255, .78);
+  border-top: 1px solid rgba(255, 255, 255, .13);
+  font-family: var(--headline);
+  font-size: clamp(16px, 1.7vw, 25px);
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+
+.scope-formula i,
+.scope-formula b {
+  margin: 0 10px;
+  color: var(--streetbeat);
+  font-style: normal;
+}
+
 .workspace-principle {
   display: grid;
   grid-template-columns: 1fr .72fr;
@@ -1658,7 +1757,7 @@ select {
 
 .governance-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin-top: 72px;
 }
@@ -1868,8 +1967,13 @@ footer > div {
   .split-heading,
   .mission-chain,
   .role-inner,
-  .meeting-quote-inner {
+  .meeting-quote-inner,
+  .scope-intro {
     grid-template-columns: 1fr;
+  }
+
+  .scope-intro > span {
+    grid-column: auto;
   }
 
   .quote-context p {
@@ -2030,8 +2134,18 @@ footer > div {
   .governance-grid,
   .streetbeat-proof-grid,
   .streetbeat-facts,
-  .workspace-principle {
+  .workspace-principle,
+  .scope-cards {
     grid-template-columns: 1fr;
+  }
+
+  .scope-cards article {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .13);
+  }
+
+  .scope-cards article:last-child {
+    border-bottom: 0;
   }
 
   .meeting-quote-inner {

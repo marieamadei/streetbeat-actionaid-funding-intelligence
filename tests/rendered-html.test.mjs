@@ -29,14 +29,17 @@ test("renders the ActionAid Funding Intelligence presentation", async () => {
 
   const html = await response.text();
   assert.match(html, /ActionAid Funding Intelligence/);
-  assert.match(html, /Dall’AI sperimentata all’AI operativa/);
+  assert.match(html, /Dall’AI sperimentata/);
+  assert.match(html, /all’AI operativa/);
   assert.match(html, /Il recap del nostro primo confronto/);
   assert.match(html, /Licenze, formazione, GPT creati dai team/);
   assert.match(html, /Un ambiente AI condiviso, proattivo e governato/);
   assert.match(html, /Abbiamo una Ferrari importantissima/);
-  assert.match(html, /AI per contesti in cui controllo e affidabilità/);
+  assert.match(html, /Controllo e affidabilità/);
   assert.match(html, /OPPORTUNITÀ/);
   assert.match(html, /Jarvis/);
-  assert.match(html, /Settembre/);
-  assert.match(html, /Scegliere il primo workflow/);
+  assert.match(html, /Settembre 2026/);
+  assert.match(html, /Uffici ActionAid, Milano/);
+  assert.match(html, /Scegliere il primo flusso di lavoro/);
+  assert.doesNotMatch(html, /SCENARIO DEMO|nella demo/);
 });
