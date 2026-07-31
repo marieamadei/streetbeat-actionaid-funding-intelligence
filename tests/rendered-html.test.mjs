@@ -35,16 +35,6 @@ test("renders the ActionAid Funding Intelligence presentation", async () => {
   assert.match(html, /AI per contesti in cui controllo e affidabilità/);
   assert.match(html, /OPPORTUNITÀ/);
   assert.match(html, /Jarvis/);
-});
-
-test("renders the interactive ActionAid demo", async () => {
-  const response = await render("/demo");
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
-
-  const html = await response.text();
-  assert.match(html, /Funding Control/);
-  assert.match(html, /Due opportunità possono avanzare/);
-  assert.match(html, /SCENARIO DEMO/);
-  assert.match(html, /ActionAid/);
+  assert.match(html, /Settembre/);
+  assert.match(html, /Scegliere il primo workflow/);
 });

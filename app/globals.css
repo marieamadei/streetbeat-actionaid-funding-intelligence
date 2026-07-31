@@ -1696,6 +1696,32 @@ select {
   margin-top: 16px;
 }
 
+.next-step-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 8px;
+}
+
+.next-step-points > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 38px;
+  padding: 0 13px;
+  color: rgba(255, 255, 255, .72);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 99px;
+  font-size: 9px;
+  background: rgba(16, 17, 18, .26);
+  backdrop-filter: blur(8px);
+}
+
+.next-step-points b {
+  color: var(--streetbeat);
+  font-size: 8px;
+}
+
 footer {
   display: grid;
   grid-template-columns: .5fr 1fr .5fr;

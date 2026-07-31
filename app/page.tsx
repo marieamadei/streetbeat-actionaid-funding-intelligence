@@ -92,15 +92,15 @@ export default function Home() {
           <a href="#prodotto">Come funziona</a>
           <a href="#streetbeat">Perché Streetbeat</a>
         </div>
-        <Link className="button button-nav" href="/demo">
-          Entra nella demo <span aria-hidden="true">↗</span>
-        </Link>
+        <a className="button button-nav" href="#prossimo-passo">
+          Il prossimo passo <span aria-hidden="true">↓</span>
+        </a>
       </nav>
 
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <div className="eyebrow"><span /> STREETBEAT × ACTIONAID · CONCEPT DEMO</div>
+          <div className="eyebrow"><span /> STREETBEAT × ACTIONAID · FOLLOW-UP CONCEPT</div>
           <h1>
             Più opportunità. Relazioni più forti.
             <em> Meno dispersione.</em>
@@ -111,9 +111,9 @@ export default function Home() {
             investire e preparare più rapidamente la prossima azione.
           </p>
           <div className="hero-actions">
-            <Link className="button button-primary" href="/demo">
-              Vedi il prodotto in azione <span aria-hidden="true">→</span>
-            </Link>
+            <a className="button button-primary" href="#valore">
+              Scopri Funding Intelligence <span aria-hidden="true">→</span>
+            </a>
             <a className="button button-ghost" href="#visione">Scopri la visione</a>
           </div>
           <div className="hero-proof">
@@ -332,7 +332,7 @@ export default function Home() {
             <span>IL CICLO DEL FUNDING</span>
             <h3>Dall’opportunità alla relazione.<br />Dalla proposta a nuova conoscenza.</h3>
             <p>Una sola vista mostra dove il funding accelera, dove si blocca e dove un’azione può aumentare probabilità e qualità.</p>
-            <Link href="/demo">Esplora il Funding Control <b>→</b></Link>
+            <a href="#prossimo-passo">Definiamo il primo pilot <b>→</b></a>
           </div>
           <div className="chain-steps">
             {missionChain.map(([number, title, body], index) => (
@@ -442,14 +442,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="final-cta">
+      <section className="final-cta" id="prossimo-passo">
         <img src={asset("/actionaid-mission.jpg")} alt="" aria-hidden="true" />
         <div className="final-overlay" />
         <div className="final-copy">
-          <span>STREETBEAT × ACTIONAID</span>
-          <h2>Partire dal core.<br />Misurare il valore.<br /><em>Estendere ciò che funziona.</em></h2>
-          <p>Entra nella demo e prova una giornata operativa di ActionAid Funding Intelligence.</p>
-          <Link className="button button-primary" href="/demo">Esplora la demo <span>→</span></Link>
+          <span>IL PROSSIMO MOMENTO</span>
+          <h2>Settembre.<br /><em>Milano.</em></h2>
+          <p>Un incontro di lavoro per definire il primo pilot di ActionAid Funding Intelligence: perimetro, fonti, workflow, guardrail e indicatori di valore.</p>
+          <div className="next-step-points" aria-label="Obiettivi del prossimo incontro">
+            <span><b>01</b> Scegliere il primo workflow</span>
+            <span><b>02</b> Verificare dati e integrazioni</span>
+            <span><b>03</b> Concordare KPI e governance</span>
+          </div>
+          <a className="button button-primary" href="mailto:marie@streetbeat.com?subject=ActionAid%20Funding%20Intelligence%20%E2%80%94%20prossimo%20incontro">Prepariamo l’incontro <span>→</span></a>
         </div>
       </section>
 
@@ -458,7 +463,7 @@ export default function Home() {
           <img src={asset("/streetbeat-logo-compact-dark-bg.svg")} alt="Streetbeat" />
         </Link>
         <p>Concept dimostrativo sviluppato da Streetbeat a partire da fonti pubbliche ActionAid e dalle priorità condivise nell’incontro. Dati di scenario esplicitamente indicati nella demo.</p>
-        <div><a href="#top">Torna su ↑</a><Link href="/demo">Demo ↗</Link></div>
+        <div><a href="#top">Torna su ↑</a><a href="#prossimo-passo">Settembre, Milano ↗</a></div>
       </footer>
     </main>
   );
